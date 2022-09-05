@@ -10,6 +10,7 @@ services:
       - "5317:3000"
 
   db:
+    user: root
     container_name: postgres
     restart: always
     image: postgres:latest
@@ -22,6 +23,7 @@ services:
 
 
   pgadmin:
+    user: root
     container_name: pgadmin
     image: dpage/pgadmin4:5.7
     environment:
