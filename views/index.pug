@@ -1,6 +1,29 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
-  p Test changes
+	head
+		title Hello world page
+	h1 Таблица пользователей данного продукта
+	table
+		tr
+			th Id
+			th Name
+			th Surname
+		for obj in users
+			tr
+				td= obj.id
+				td= obj.name
+				td= obj.surname
+
+	br
+	br
+
+	h1 Информация о системе
+	table.info
+		tr
+			th Name
+			th Data
+		for obj in Object.keys(data)
+			tr
+				td= obj
+				td= data[obj]

@@ -1,0 +1,8 @@
+{
+	"watch": ["views", "public", "routes"],
+	"ext": "*",
+	"ignore": ["*.test.ts"],
+	"execMap": {
+		"ts": "ts-node"
+	}
+}

@@ -1,8 +1,32 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
+@charset "UTF-8";
+/* внешние границы таблицы серого цвета толщиной 1px */
+* {
+  font-family: sans-serif; }
 
-a {
-  color: #00B7FF; }
+table {
+  border: 1px solid grey;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%; }
+
+/* границы ячеек первого ряда таблицы */
+th {
+  border: 1px solid grey;
+  font-size: 16px; }
+
+/* границы ячеек тела таблицы */
+td {
+  border: 1px solid grey;
+  font-size: 16px; }
+
+h1 {
+  text-align: center;
+  font-size: 25px; }
+
+body {
+  padding: 10px 100px; }
+
+.info td, .info th {
+  padding: 5px; }
 
 /*# sourceMappingURL=style.css.map */
