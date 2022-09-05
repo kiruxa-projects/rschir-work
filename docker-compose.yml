@@ -7,7 +7,7 @@ services:
       dockerfile: Dockerfile
     restart: unless-stopped
     ports:
-      - "5312:3000"
+      - "5317:3000"
 
   db:
     container_name: postgres
